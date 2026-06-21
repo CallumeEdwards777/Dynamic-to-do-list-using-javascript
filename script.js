@@ -19,10 +19,16 @@ function addItem() {
     items.unshift({
         description: "",
         completed: false
-    });
+    }); 
 
     setItems(items);
     refreshList();
+}
+
+function  updateItem(item, key, value) {
+    item[key] = value;
+    setItems(items);
+    refreshlist();
 }
 
 function refreshList() {
@@ -38,6 +44,15 @@ function refreshList() {
 
         descriptionInput.value = item.description;
         completedCheckbox.checked = item.completed;
+        
+        descriptionInput.addEventListener("input", (event) => {
+            updateItem(item, "description", descriptionInput.value);
+        })
+
+       completedCheckbox.addEventListener("input", (event) => {
+            updateItem(item, "completed", completedCheckbox.checked);
+        })
+        
         Items_container.append(itemElement);
     }
 }

@@ -24,6 +24,12 @@ body{
 .item-description {
     padding: 10px;
     margin-bottom: 10px;
+    width: 300px;
+}
+
+.item-completed:checked + .item-description {
+    text-decoration: line-through;
+    color: #888;
 }
 
 #add {
