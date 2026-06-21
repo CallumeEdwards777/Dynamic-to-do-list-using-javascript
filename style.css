@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --sky-blue: #4FB6E8;
+  --ocean-teal: #1E8E8E;
+  --sun-yellow: #FFD93D;
+  --citrus-orange: #FF9F45;
+  --coral-pink: #FF6B6B;
+  --watermelon-red: #E63950;
+
+}
+body{
+    background: linear-gradient(135deg,#FFD93D ,#FF9F45,#FF6B6B );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-description {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#add {
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #1E8E8E;
+    background: #ffffff;
+    cursor: pointer;
+}
