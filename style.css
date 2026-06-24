@@ -19,12 +19,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 h1{
     color: var(--ocean-teal);
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
+   
 }
 
 .container {

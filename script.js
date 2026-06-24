@@ -34,9 +34,14 @@ function deleteItem() {
 
 function  updateItem(item, key, value) {
     item[key] = value;
+     if (key === "completed") {
+        items.sort((a, b) => a.completed - b.completed);
+        refreshList();
+    }
+
     setItems(items);
-    refreshlist();
 }
+
 
 function refreshList() {
 
