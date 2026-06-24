@@ -1,6 +1,7 @@
 const Items_container = document.getElementById("items");
 const Item_template = document.getElementById("itemTemplate");
 const Add_button = document.getElementById("add");
+const Delete_button = document.getElementById("delete");
 
 let items= getItems();
 
@@ -21,6 +22,12 @@ function addItem() {
         completed: false
     }); 
 
+    setItems(items);
+    refreshList();
+}
+
+function deleteItem() {
+    items.pop();
     setItems(items);
     refreshList();
 }
@@ -61,6 +68,12 @@ Add_button.addEventListener("click", () => {
     addItem();
 
 });
+
+Delete_button.addEventListener("click", () => {
+   deleteItem();
+});
+
+
 
 refreshList();
 

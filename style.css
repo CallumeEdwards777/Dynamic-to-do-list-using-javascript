@@ -21,6 +21,17 @@ body{
     align-items: center;
 }
 
+h1{
+    color: var(--ocean-teal);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .item-description {
     padding: 10px;
     margin-bottom: 10px;
@@ -38,4 +49,16 @@ body{
     color: #1E8E8E;
     background: #ffffff;
     cursor: pointer;
+    left: 505px;
+    top: 100px;
+}
+
+#delete {
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #1E8E8E;
+    background: #ffffff;
+    cursor: pointer;
+    top: 100px;
+    right: 520px;
 }
